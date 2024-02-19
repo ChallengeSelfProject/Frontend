@@ -52,10 +52,11 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 `}>
             Find in-depth information about Next.js features and API.
           </p>
         </a>
+        <h1 className="text-lg font-bold">Tesss</h1>
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
