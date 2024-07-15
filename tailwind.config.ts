@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      // custom colors
+      'global': '#F8FBFF',
+      // default colors
       'transparent': 'transparent',
       'current': 'currentColor',
       'black': '#000',
