@@ -1,6 +1,6 @@
 import React from "react";
-import Label from "../../../atoms/Label";
-import InputPassword from "../../../atoms/InputPassword";
+import Label from "@components/atoms/Label";
+import InputPassword from "@components/atoms/InputPassword";
 
 type InputFormPasswordProps = {
   labelFor: string;

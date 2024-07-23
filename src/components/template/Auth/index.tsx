@@ -7,7 +7,7 @@ type AuthTemplateProps = {
 
 const AuthTemplate: React.FC<AuthTemplateProps> = ({ children }) => {
   return (
-    <div className="flex flex-col items-center w-full mt-8">
+    <div className="mt-8 flex w-full flex-col items-center">
       <Image
         src="/assets/logo.png"
         alt="SelfProject Logo"

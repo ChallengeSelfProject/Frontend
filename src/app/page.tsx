@@ -29,7 +29,7 @@ export default function Home() {
           <Link className="btn" href="auth/forgot-password">
             Forgot Password
           </Link>
-          <Link className="btn" href="auth/reset-password">
+          <Link className="btn" href="auth/new-password">
             Create New Password
           </Link>
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import AuthTemplate from "@/components/template/Auth";
-import InputFormPassword from "@/components/molecules/GroupInput/Password";
-import Button from "@/components/atoms/Button";
-import InputForm from "@/components/molecules/GroupInput/Basic";
+import AuthTemplate from "@components/template/Auth";
+import InputFormPassword from "@components/molecules/GroupInput/Password";
+import Button from "@components/atoms/Button";
+import InputForm from "@components/molecules/GroupInput/Basic";
 
 const RegisterPage = () => {
   return (
