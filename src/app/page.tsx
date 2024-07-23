@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center gap-4 p-24">
       <div className="">
         <Image
-          src="/assets/image.png"
+          src="/assets/logo.png"
           alt="SelfProject Logo"
           // className="dark:invert"
           width={200}
@@ -19,19 +19,19 @@ export default function Home() {
       </div>
       <div className="">
         <h4 className="text-center">Menu</h4>
-        <div className="flex gap-5 justify-center">
-          <a className="btn" href="pages/login">
+        <div className="flex justify-center gap-5">
+          <Link className="btn" href="auth/login">
             Login
-          </a>
-          <a className="btn" href="pages/register">
+          </Link>
+          <Link className="btn" href="auth/register">
             Register
-          </a>
-          <a className="btn" href="pages/forgotPassword">
+          </Link>
+          <Link className="btn" href="auth/forgot-password">
             Forgot Password
-          </a>
-          <a className="btn" href="pages/createNewPassword">
+          </Link>
+          <Link className="btn" href="auth/reset-password">
             Create New Password
-          </a>
+          </Link>
         </div>
       </div>
     </main>

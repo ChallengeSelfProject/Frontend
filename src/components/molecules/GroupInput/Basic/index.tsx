@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Input from "../atoms/input";
-import Label from "../atoms/label";
+import Input from "../../../atoms/Input";
+import Label from "../../../atoms/Label";
 
 type InputFormProps = {
   labelFor: string;
