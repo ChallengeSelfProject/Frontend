@@ -1,6 +1,7 @@
 import React from "react";
-import InputForm from "../atoms_molecules/input";
-import Button from "../atoms_molecules/buton";
+import InputForm from "../molecules/inputForm";
+import InputFormPassword from "../molecules/inputFormPassword";
+import Button from "../atoms/buton";
 
 const FormCreateNewPassword = () => {
   return (
@@ -9,45 +10,39 @@ const FormCreateNewPassword = () => {
         labelFor="Email"
         htmlFor="email"
         type="email"
-        placeholder="selfproject@gmail.com"
-        value=""
+        placeholder="email"
+        defaultValue=""
         name="email"
         id="email"
         required={true}
         autoComplete="email"
       />
-      <InputForm
+      <InputFormPassword
         labelFor="Password Lama"
-        htmlFor="password"
-        type="password"
-        placeholder="selfproject123"
-        value=""
-        name="password"
-        id="password"
-        required={true}
-        autoComplete="password"
-      />
-      <InputForm
-        labelFor="Password Baru"
-        htmlFor="password"
-        type="password"
-        placeholder="selfproject123"
-        value=""
-        name="password"
-        id="password"
-        required={true}
-        autoComplete="password"
-      />
-      <InputForm
-        labelFor="Konfirmasi Password Baru"
-        htmlFor="confirmpassword"
+        htmlFor="password_lama"
         type="password"
         placeholder="********"
-        value=""
+        defaultValue=""
         name="password"
-        id="password"
         required={true}
-        autoComplete="password"
+      />
+      <InputFormPassword
+        labelFor="Password Baru"
+        htmlFor="password_baru"
+        type="password"
+        placeholder="********"
+        defaultValue=""
+        name="password"
+        required={true}
+      />
+      <InputFormPassword
+        labelFor="Konfirmasi Password Baru"
+        htmlFor="konfirmasi_password_baru"
+        type="password"
+        placeholder="********"
+        defaultValue=""
+        name="password"
+        required={true}
       />
       <Button className="mt-8 h-10 text-sm font-semibold">Simpan</Button>
     </form>

@@ -1,7 +1,7 @@
 import React from "react";
-import InputForm from "../atoms_molecules/input";
-import Button from "../atoms_molecules/buton";
-import InputFormPassword from "../atoms_molecules/input/indexPassword";
+import InputForm from "../molecules/inputForm";
+import Button from "../atoms/buton";
+import InputFormPassword from "../molecules/inputFormPassword";
 
 const FormLogin = () => {
   return (
@@ -11,7 +11,7 @@ const FormLogin = () => {
         htmlFor="email"
         type="email"
         placeholder="email"
-        value=""
+        defaultValue=""
         name="email"
         id="email"
         required={true}
@@ -22,11 +22,9 @@ const FormLogin = () => {
         htmlFor="password"
         type="password"
         placeholder="password"
-        value=""
+        defaultValue=""
         name="password"
-        // id="password"
         required={true}
-        // autoComplete="password"
       />
       <a
         href="../../pages/forgotPassword"

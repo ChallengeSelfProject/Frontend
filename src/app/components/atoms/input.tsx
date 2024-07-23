@@ -1,18 +1,17 @@
 type InputProps = {
   type: string;
   placeholder: string;
-  value: string;
+  defaultValue: string;
   name: string;
   id: string;
   required: boolean;
   autoComplete: string;
-  // onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const Input: React.FC<InputProps> = ({
   type,
   placeholder,
-  value,
+  defaultValue,
   name,
   id,
   required,
@@ -22,7 +21,7 @@ const Input: React.FC<InputProps> = ({
     <input
       type={type}
       placeholder={placeholder}
-      value={value}
+      defaultValue={defaultValue}
       name={name}
       id={id}
       required={required}

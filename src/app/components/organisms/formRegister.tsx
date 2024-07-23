@@ -1,53 +1,50 @@
 import React from "react";
-import InputForm from "../atoms_molecules/input";
-import Button from "../atoms_molecules/buton";
+import InputForm from "../molecules/inputForm";
+import InputFormPassword from "../molecules/inputFormPassword";
+import Button from "../atoms/buton";
 
 const FormRegister = () => {
   return (
     <form action="" className="flex flex-col gap-2 w-full">
       <InputForm
-        labelFor="phoneNumber"
-        htmlFor="phoneNumber"
+        labelFor="Nomor Ponsel"
+        htmlFor="nomorponsel"
         type="number"
         placeholder="+62"
-        value=""
-        name="phoneNumber"
-        id="phoneNumber"
+        defaultValue=""
+        name="nomor_ponsel"
+        id="nomor_ponsel"
         required={true}
-        autoComplete="phoneNumber"
+        autoComplete="nomorponsel"
       />
       <InputForm
         labelFor="Email"
         htmlFor="email"
         type="email"
         placeholder="email"
-        value=""
+        defaultValue=""
         name="email"
         id="email"
         required={true}
         autoComplete="email"
       />
-      <InputForm
+      <InputFormPassword
         labelFor="Password"
         htmlFor="password"
         type="password"
         placeholder="selfproject123"
-        value=""
+        defaultValue=""
         name="password"
-        id="password"
         required={true}
-        autoComplete="password"
       />
-      <InputForm
+      <InputFormPassword
         labelFor="Konfirmasi Password"
         htmlFor="confirmpassword"
         type="password"
         placeholder="********"
-        value=""
+        defaultValue=""
         name="password"
-        id="password"
         required={true}
-        autoComplete="password"
       />
       <Button className="mt-8 h-10 text-sm font-semibold">Daftar</Button>
     </form>

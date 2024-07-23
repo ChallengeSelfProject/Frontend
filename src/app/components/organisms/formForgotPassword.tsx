@@ -1,6 +1,6 @@
 import React from "react";
-import InputForm from "../atoms_molecules/input";
-import Button from "../atoms_molecules/buton";
+import InputForm from "../molecules/inputForm";
+import Button from "../atoms/buton";
 
 const FormForgotPassword = () => {
   return (
@@ -10,11 +10,11 @@ const FormForgotPassword = () => {
         htmlFor="email"
         type="email"
         placeholder="selfproject@gmail.com"
-        value=""
+        defaultValue=""
         name="email"
         id="email"
         required={true}
-        // autoComplete="email"
+        autoComplete="email"
       />
       <Button className="mt-8 h-10 text-sm font-semibold">Verifikasi</Button>
     </form>

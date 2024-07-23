@@ -7,7 +7,7 @@ const LoginPage = () => {
   return (
     <div className="flex justify-center min-h-screen">
       <div className="max-w-screen-2xl flex justify-center flex-1 bg-global">
-        <div className="flex flex-col w-4/5 py-6 sm:w-11/12 md:w-10/12 lg:w-1/2 xl:w-6/12 sm:p-12 lg:mt-36">
+        <div className="flex flex-col w-4/5 py-6 sm:w-11/12 md:w-10/12 lg:w-1/2 xl:w-6/12 sm:p-16 lg:mt-36">
           <AuthTemplate>
             <p className="text-gray-400 text-sm text-start mt-6 mb-3">
               Masukkan email kamu untuk mengirimkan kode verifikasi lupa

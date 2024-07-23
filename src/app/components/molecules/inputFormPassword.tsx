@@ -1,44 +1,37 @@
-import React, { FC } from "react";
-import Input from "./input";
-import Label from "./label";
+import React from "react";
+import Label from "../atoms/label";
+import InputPassword from "../atoms/inputPassword";
 
-type InputFormProps = {
+type InputFormPasswordProps = {
   labelFor: string;
   htmlFor: string;
   type: string;
   placeholder: string;
-  value: string;
+  defaultValue: string;
   name: string;
-  id: string;
   required: boolean;
-  autoComplete: string;
 };
 
-const InputForm: React.FC<InputFormProps> = ({
+const InputFormPassword: React.FC<InputFormPasswordProps> = ({
   labelFor,
   htmlFor,
   type,
   placeholder,
-  value,
+  defaultValue,
   name,
-  id,
   required,
-  autoComplete,
 }) => {
   return (
     <div className="flex flex-col gap-2">
       <Label htmlFor={htmlFor}>{labelFor}</Label>
-      <Input
-        type={type}
+      <InputPassword
         placeholder={placeholder}
-        value={value}
+        defaultValue={defaultValue}
         name={name}
-        id={id}
         required={required}
-        autoComplete={autoComplete}
       />
     </div>
   );
 };
 
-export default InputForm;
+export default InputFormPassword;
