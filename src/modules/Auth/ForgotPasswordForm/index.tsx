@@ -1,5 +1,6 @@
 import Button from "@/components/atoms/Button";
 import InputForm from "@/components/molecules/GroupInput/Basic";
+import Link from "next/link";
 
 const ForgotPasswordForm = () => {
   return (
@@ -19,8 +20,13 @@ const ForgotPasswordForm = () => {
           required={true}
           autoComplete="email"
         />
-        <Button className="mt-8 h-10 text-sm font-semibold">Verifikasi</Button>
+        <Button className="mt-8 h-10 w-full rounded-lg bg-primary-300 text-sm font-semibold text-white">
+          Verifikasi
+        </Button>
       </form>
+      <Link href="/auth/new-password" className="">
+        To New Password
+      </Link>
     </>
   );
 };

@@ -27,10 +27,14 @@ const LoginForm = () => {
         name="password"
         required={true}
       />
-      <Link href="/auth/forgot-password" className="mt-0 text-xs text-primary-300 underline">
-        Lupa Password
-      </Link>
-      <Button className="mt-8 h-10 text-sm font-semibold">Masuk</Button>
+      <span className="mt-0 text-xs text-primary-300 underline">
+        <Link href="/auth/forgot-password" className="undeline">
+          Lupa Password
+        </Link>
+      </span>
+      <Button className="mt-8 h-10 w-full rounded-lg bg-primary-300 text-sm font-semibold text-white">
+        Masuk
+      </Button>
     </form>
   );
 };
