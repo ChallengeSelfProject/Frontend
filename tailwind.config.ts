@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import aspectRatio from '@tailwindcss/aspect-ratio';
 
 const config: Config = {
   content: [
@@ -8,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      // custom colors
+      'global': '#F8FBFF',
+      // default colors
       'transparent': 'transparent',
       'current': 'currentColor',
       'black': '#000',
@@ -72,7 +76,6 @@ const config: Config = {
         '800': '#2F7657',
         '900': '#255E46',
         '1000': '#1E4D3A',
-      
       },
     },
     extend: {
@@ -83,6 +86,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    aspectRatio, 
+  ],
 };
+
+module.exports = config;
+
 export default config;
