@@ -40,3 +40,12 @@ body {
   width: auto;
   padding: 10px;
 }
+
+#default-carousel {
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
