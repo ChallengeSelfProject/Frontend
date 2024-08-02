@@ -45,7 +45,7 @@ const Carousel: React.FC = () => {
           />
         ))}
       </div>
-      <div className="relative left-2 z-30 flex pt-2 text-gray-900 md:absolute md:bottom-24 md:left-12 md:flex-row md:items-center md:justify-start">
+      <div className="relative left-6 z-30 flex pt-2 text-gray-900 md:absolute md:bottom-36 md:left-0 md:flex-row md:items-center md:justify-start lg:left-12">
         <div className="md:w-1/2 md:text-left">
           <h2 className="text-xl font-bold md:text-2xl lg:text-4xl">
             Tingkatkan Karirmu, Bangun Portfolio Proffesionalmu

@@ -86,8 +86,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       height: {
-        '96': '24rem', // You can override the default height for '96'
-        'custom-md': '36rem', // Add a custom height value for md breakpoint
+        '96': '24rem',
+        'custom-md': '38rem', 
       },
     },
   },

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
-
+import "swiper/swiper-bundle.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
         <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${inter.className} mx-4 lg:mx-12`}>
+      <body className={`${inter.className} mx-4 overflow-x-hidden sm:mx-12`}>
         {children}
 
         {/* <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script> */}

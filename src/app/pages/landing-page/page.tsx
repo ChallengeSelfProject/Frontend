@@ -1,16 +1,32 @@
 "use client";
 
+import React from "react";
 import Carousel from "@/components/organism/Carousel";
 import Navbar from "@/components/organism/Navbar";
-import React from "react";
+import SelfChallengeSection from "@/components/organism/SelfChallengeSection";
+import NewChallengeSection from "@/components/organism/NewChallengeSection";
+import TopContributorsSection from "@/components/organism/TopContributorsSection";
 
+//
+// console.log(items);
 const LandingPage = () => {
   return (
+    // <div className="overflow-x-hidden">
     <div>
-      <Navbar />
-      <Carousel />
-      <div className="mt-10">
-        <h1>ini coba</h1>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <Carousel />
+      </div>
+      <div>
+        <SelfChallengeSection />
+      </div>
+      <div>
+        <NewChallengeSection />
+      </div>
+      <div>
+        <TopContributorsSection />
       </div>
     </div>
   );

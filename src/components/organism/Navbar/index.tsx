@@ -32,7 +32,7 @@ const Navbar = () => {
           className={`${isMobileMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="mt-4 flex flex-col gap-4 rounded-lg px-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse">
+          <ul className="mt-4 flex flex-col gap-4 rounded-lg px-4 font-medium md:mt-0 md:flex-row md:gap-0 md:space-x-4 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse">
             <MenuItem
               className="block rounded-lg border border-primary-300 bg-white px-4 py-2 text-sm font-semibold text-primary-300 hover:bg-gray-100"
               href="#"
