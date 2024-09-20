@@ -10,11 +10,11 @@ const TopContributorsSection = () => {
     <div>
       <LandingPageSection className="bg-white pt-12">
         <SectionTitle title="Top Contributors" className="mb-4 lg:mb-6" />
-        <div className="flex flex-col justify-between md:flex-row">
-          <TopContributors />
-          <TopContributors />
-          <TopContributors />
-          <TopContributors />
+        <div className="flex flex-col items-center justify-between gap-3 lg:flex-row">
+          <TopContributors contributorName="Firman Wahyudi" challenge={12} />
+          <TopContributors contributorName="Dwi Wahyu Prambodo" challenge={12} />
+          <TopContributors contributorName="Fadhil Nurhuda" challenge={12} />
+          <TopContributors contributorName="M Syaifudin" challenge={12} />
         </div>
       </LandingPageSection>
     </div>

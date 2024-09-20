@@ -2,39 +2,52 @@ import React from "react";
 import CardFrame from "../CardFrame";
 import CardImage from "../CardImage";
 import CardContent from "../CardContent";
+import CardContentTitle from "../CardContent/CardContentTitle";
+import CardOverlay from "../CardOverlayText";
+import CardContentShowC from "../CardContent/index2";
 
-const HorizontalCard = () => {
+type ShowcaseCardProps = {
+  CardImagehref: string;
+  CardImagesrc: string;
+  CardImagealt: string;
+  CardImageclassName: string;
+  CardContentTitleheading: string;
+  CardContentTitleHref: string;
+  CardContentTitleclassName: string;
+  CardContentText: string;
+  CardOverlayText: string;
+};
+
+const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
+  CardImagehref,
+  CardImagesrc,
+  CardImagealt,
+  CardImageclassName,
+  CardContentTitleheading,
+  CardContentTitleHref,
+  CardContentTitleclassName,
+  CardContentText,
+  CardOverlayText,
+}) => {
   return (
-    <div className="mx-auto flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-      <CardFrame className="max-w-md">
+    <div className="relative mx-auto flex flex-col items-center gap-4 rounded-lg border-2 border-gray-500 lg:flex-row lg:justify-between">
+      <CardFrame className="max-w-md overflow-hidden rounded-lg">
         <CardImage
-          href="#"
-          src="/assets/cardImage/uiux.jpg"
-          alt="UX Design"
-          className="h-auto w-full"
+          href={CardImagehref}
+          src={CardImagesrc}
+          alt={CardImagealt}
+          className={CardImageclassName}
         />
-        <CardContent heading="UI/UX Design Challenge" href="#" />
-      </CardFrame>
-      <CardFrame className="max-w-md">
-        <CardImage
-          href="#"
-          src="/assets/cardImage/frontend.jpg"
-          alt="Frontend Design"
-          className="h-auto w-full"
+        <CardContentTitle
+          heading={CardContentTitleheading}
+          href={CardContentTitleHref}
+          className={CardContentTitleclassName}
         />
-        <CardContent heading="Frontend Developer Challenge" href="#" />
-      </CardFrame>
-      <CardFrame className="max-w-md">
-        <CardImage
-          href="#"
-          src="/assets/cardImage/backend.jpg"
-          alt="Backend Design"
-          className="h-auto w-full"
-        />
-        <CardContent heading="Backend Developer Challenge" href="#" />
+        <CardContentShowC text={CardContentText} />
+        <CardOverlay text={CardOverlayText} />
       </CardFrame>
     </div>
   );
 };
 
-export default HorizontalCard;
+export default ShowcaseCard;

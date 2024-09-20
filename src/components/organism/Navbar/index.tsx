@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="border-gray-200 bg-white py-4">
-      <div className="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between">
         <Logo />
         <MobileMenuToggle onClick={toggleMobileMenu} isOpen={isMobileMenuOpen} />
         <div

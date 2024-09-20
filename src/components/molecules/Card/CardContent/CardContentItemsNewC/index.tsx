@@ -1,11 +1,11 @@
 import React from "react";
 
-type CardContentItemsProps = {
+type CardContentItemsNewCProps = {
   icon: React.ReactNode;
   text: string;
 };
 
-const CardContentItems: React.FC<CardContentItemsProps> = ({ icon, text }) => {
+const CardContentItemsNewC: React.FC<CardContentItemsNewCProps> = ({ icon, text }) => {
   return (
     <li className="flex items-center space-x-4">
       {icon}
@@ -14,4 +14,4 @@ const CardContentItems: React.FC<CardContentItemsProps> = ({ icon, text }) => {
   );
 };
 
-export default CardContentItems;
+export default CardContentItemsNewC;

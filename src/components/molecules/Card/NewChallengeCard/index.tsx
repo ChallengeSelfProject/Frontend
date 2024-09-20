@@ -1,11 +1,11 @@
 import React from "react";
 import CardFrame from "../CardFrame";
 import CardImage from "../CardImage";
-import CardContent from "../CardContent";
+import CardOverlay from "../CardOverlayText";
 import CardContentTitle from "../CardContent/CardContentTitle";
-import CardOverlayText from "../CardOverlayText";
+import CardContentNewC from "../CardContent";
 
-type ChallengeCardProps = {
+type NewChallengeCardProps = {
   CardImagehref: string;
   CardImagesrc: string;
   CardImagealt: string;
@@ -13,9 +13,13 @@ type ChallengeCardProps = {
   CardContentTitleheading: string;
   CardContentTitleHref: string;
   CardContentTitleclassName: string;
+  CardContentDate: string;
+  CardContentParticipants: number;
+  CardContentSubmitted: number;
+  CardOverlayText: string;
 };
 
-const ChallengeCard: React.FC<ChallengeCardProps> = ({
+const NewChallengeCard: React.FC<NewChallengeCardProps> = ({
   CardImagehref,
   CardImagesrc,
   CardImagealt,
@@ -23,6 +27,10 @@ const ChallengeCard: React.FC<ChallengeCardProps> = ({
   CardContentTitleheading,
   CardContentTitleHref,
   CardContentTitleclassName,
+  CardContentDate,
+  CardContentParticipants,
+  CardContentSubmitted,
+  CardOverlayText,
 }) => {
   return (
     <div className="relative mx-auto flex flex-col items-center gap-4 rounded-lg border-2 border-gray-500 lg:flex-row lg:justify-between">
@@ -38,11 +46,15 @@ const ChallengeCard: React.FC<ChallengeCardProps> = ({
           href={CardContentTitleHref}
           className={CardContentTitleclassName}
         />
-        <CardContent />
-        <CardOverlayText>UI/UX Design Challenge</CardOverlayText>
+        <CardContentNewC
+          date={CardContentDate}
+          participants={CardContentParticipants}
+          submitted={CardContentSubmitted}
+        />
+        <CardOverlay text={CardOverlayText} />
       </CardFrame>
     </div>
   );
 };
 
-export default ChallengeCard;
+export default NewChallengeCard;

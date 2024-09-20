@@ -1,15 +1,15 @@
 import React from "react";
 
-type CardOverlayTextProps = {
-  children?: React.ReactNode;
+type CardOverlayProps = {
+  text: string;
 };
 
-const CardOverlayText: React.FC<CardOverlayTextProps> = ({ children }) => {
+const CardOverlay: React.FC<CardOverlayProps> = ({ text }) => {
   return (
     <div className="absolute inset-0 flex items-start justify-end">
-      <h2 className="rounded-lg bg-primary-400 p-1 text-sm font-light text-white">{children}</h2>
+      <h2 className="rounded-lg bg-primary-400 p-1 text-sm font-light text-white">{text}</h2>
     </div>
   );
 };
 
-export default CardOverlayText;
+export default CardOverlay;

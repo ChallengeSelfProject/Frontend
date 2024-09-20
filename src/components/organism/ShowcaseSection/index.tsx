@@ -4,12 +4,12 @@ import SwiperCore from "swiper";
 import { Pagination } from "swiper/modules";
 import SectionLandingPage from "../LandingPageSectionFrame";
 import SectionTitle from "@/components/molecules/TitleSection";
-import NewChallengeCard from "@/components/molecules/Card/NewChallengeCard";
+import ShowcaseCard from "@/components/molecules/Card/ShowcaseCard";
 
-const NewChallengeSection = () => {
+const ShowcaseSection = () => {
   return (
     <SectionLandingPage className="bg-white pt-5 lg:pt-14">
-      <SectionTitle title="New Challenge" className="mb-4 lg:mb-6" />
+      <SectionTitle title="Showcase" className="mb-4 lg:mb-6" />
       <div className="relative w-full">
         <Swiper
           centeredSlides={true}
@@ -35,7 +35,7 @@ const NewChallengeSection = () => {
         >
           <SwiperSlide>
             <div className="flex items-center justify-center">
-              <NewChallengeCard
+              <ShowcaseCard
                 CardImagehref="#"
                 CardImagesrc="/assets/cardImage/uiux.jpg"
                 CardImagealt="Image 1"
@@ -43,16 +43,14 @@ const NewChallengeSection = () => {
                 CardContentTitleheading="UI/UX Design"
                 CardContentTitleHref="#"
                 CardContentTitleclassName="text-xl font-bold text-gray-900"
-                CardContentDate="12 July 2021"
-                CardContentParticipants={20}
-                CardContentSubmitted={10}
+                CardContentText="Firman Wahyudi"
                 CardOverlayText="UI/UX Design Challenge"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex items-center justify-center">
-              <NewChallengeCard
+              <ShowcaseCard
                 CardImagehref="#"
                 CardImagesrc="/assets/cardImage/backend.jpg"
                 CardImagealt="Image 1"
@@ -60,16 +58,14 @@ const NewChallengeSection = () => {
                 CardContentTitleheading="Backend Developer"
                 CardContentTitleHref="#"
                 CardContentTitleclassName="text-xl font-bold text-gray-900"
-                CardContentDate="12 July 2021"
-                CardContentParticipants={20}
-                CardContentSubmitted={10}
+                CardContentText="Firman Wahyudi"
                 CardOverlayText="UI/UX Design Challenge"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex items-center justify-center">
-              <NewChallengeCard
+              <ShowcaseCard
                 CardImagehref="#"
                 CardImagesrc="/assets/cardImage/frontend.jpg"
                 CardImagealt="Image 1"
@@ -77,16 +73,14 @@ const NewChallengeSection = () => {
                 CardContentTitleheading="Frontend Developer"
                 CardContentTitleHref="#"
                 CardContentTitleclassName="text-xl font-bold text-gray-900"
-                CardContentDate="12 July 2021"
-                CardContentParticipants={20}
-                CardContentSubmitted={10}
+                CardContentText="Firman Wahyudi"
                 CardOverlayText="Backend Developer Challenge"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex items-center justify-center">
-              <NewChallengeCard
+              <ShowcaseCard
                 CardImagehref="#"
                 CardImagesrc="/assets/cardImage/uiux.jpg"
                 CardImagealt="Image 1"
@@ -94,16 +88,14 @@ const NewChallengeSection = () => {
                 CardContentTitleheading="UI/UX Design"
                 CardContentTitleHref="#"
                 CardContentTitleclassName="text-xl font-bold text-gray-900"
-                CardContentDate="12 July 2021"
-                CardContentParticipants={20}
-                CardContentSubmitted={10}
+                CardContentText="Firman Wahyudi"
                 CardOverlayText="UI/UX Design Challenge"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex items-center justify-center">
-              <NewChallengeCard
+              <ShowcaseCard
                 CardImagehref="#"
                 CardImagesrc="/assets/cardImage/frontend.jpg"
                 CardImagealt="Image 1"
@@ -111,16 +103,14 @@ const NewChallengeSection = () => {
                 CardContentTitleheading="Frontend Developer"
                 CardContentTitleHref="#"
                 CardContentTitleclassName="text-xl font-bold text-gray-900"
-                CardContentDate="12 July 2021"
-                CardContentParticipants={20}
-                CardContentSubmitted={10}
+                CardContentText="Firman Wahyudi"
                 CardOverlayText="Frontend Developer Challenge"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex items-center justify-center">
-              <NewChallengeCard
+              <ShowcaseCard
                 CardImagehref="#"
                 CardImagesrc="/assets/cardImage/backend.jpg"
                 CardImagealt="Image 1"
@@ -128,9 +118,7 @@ const NewChallengeSection = () => {
                 CardContentTitleheading="Backend Developer"
                 CardContentTitleHref="#"
                 CardContentTitleclassName="text-xl font-bold text-gray-900"
-                CardContentDate="12 July 2021"
-                CardContentParticipants={20}
-                CardContentSubmitted={10}
+                CardContentText="Firman Wahyudi"
                 CardOverlayText="UI/UX Design Challenge"
               />
             </div>
@@ -141,4 +129,4 @@ const NewChallengeSection = () => {
   );
 };
 
-export default NewChallengeSection;
+export default ShowcaseSection;

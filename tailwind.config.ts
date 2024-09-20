@@ -89,6 +89,9 @@ const config: Config = {
         '96': '24rem',
         'custom-md': '38rem', 
       },
+      inset: {
+        '100': '27rem',
+      },
     },
   },
   plugins: [
